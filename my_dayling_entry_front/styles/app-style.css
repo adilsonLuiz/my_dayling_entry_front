@@ -1,0 +1,216 @@
+/************************ Class Manipulation *******************/
+
+
+.page {
+    background-color: #ebffff;
+
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Define a altura da tela inteira */
+    margin: 0; /* Remove margens padrão do body */
+}
+
+.page__header {
+
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 90px;
+}
+
+.page__nav_application_menu {
+
+    background-color: #ffffff;
+    height: 100px;
+    border-radius: 200px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 400px;
+    margin: 20px auto;
+    text-align: justify;
+    padding: 30px;
+    border: 4px solid #000000;
+    
+}
+
+.page__entry-content {
+
+    position:absolute;
+    top: 40%;
+    left: 30%;
+    overflow: auto;
+    
+
+
+
+}
+
+.page__entry-title {
+    position: absolute;
+    left: 43%;
+    top: 27%;
+
+
+}
+
+.page__entry-id-number {
+
+    left: 40%;
+    position: absolute;
+    font-size: 50px;
+    top: 10%;
+    padding-left: 40px;
+    text-align: center;
+    font-family: monospace;
+    
+}
+
+.page__footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+
+
+}
+
+.page__table-entrys {
+    
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+
+/************************ IDS Manipulation *******************/
+
+
+
+#btn-update {
+    position: absolute;
+    left: 75%;
+    top: 20%;
+    border: 2px solid black;
+    color: rgb(3, 3, 3);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 40px;
+    background-color: forestgreen;
+}
+
+#btn-delete {
+    position: absolute;
+    left: 26%;
+    top: 20%;
+    border: 2px solid black;
+    color: rgb(3, 3, 3);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 40px;
+    background-color: #e93035;
+}
+
+#btn-save {
+    position: absolute;
+    left: 45%;
+    top: 20%;
+    background-color: #069bf5;
+    border: 2px solid black;
+    color: rgb(3, 3, 3);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 40px;
+
+}
+
+
+#entry-title {
+
+    width: 341px;
+    height: 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border-color: black;
+    resize: none;
+}
+
+#entry-content {
+    border: 2px solid #000000;
+    border-radius: 50px;
+    text-align: center;
+    resize: none;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+
+    
+}
+
+
+#table-entrys {
+
+    border: 1px solid black;
+    width: 1200px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #ccc;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height: 500px;
+    
+}
+
+td {
+    border: 1px solid black;
+    width: 1000px;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+
+th {
+    border: 1px solid black;
+    width: 1000px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #069bf5;
+}
+
+
+/* Media Queries para ajuste em telas menores */
+@media (max-width: 768px) {
+    .page__entry-title, .page__entry-id-number {
+        font-size: 1.5em;
+    }
+
+    #btn-update, #btn-delete, #btn-save {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    #entry-title, #entry-content {
+        padding: 15px;
+    }
+}
