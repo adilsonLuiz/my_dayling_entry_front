@@ -1,51 +1,71 @@
-.page {
-    background-color: #ebffff;
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o body e a página */
+body, html {
+    height: 100%;
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    height: 100vh; /* Define a altura da tela inteira */
-    margin: 0; /* Remove margens padrão do body */
-    
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.page {
+    background-color: #79efef;
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    padding: 84px;
+    border-radius: 70px;
+}
+
+/* Estilos para o logotipo */
+#index-logo {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para a navegação */
+#main-nav ul {
+    list-style-type: none;
+    padding: 0;
 
 }
 
-/* MVP LOGO manipulation*/
-#index-logo { 
-    width: 30%;
-    padding: 100px;
-    margin: -60px;
-    position: absolute;
-    top: -16%;
-    left: 33%;
+#main-nav li {
+
+    display: inline-block;
+    margin-right: 20px;
 }
 
-
-.page__nav-application-menu {
-
-    background-color: #ffffff;
-    height: 100px;
-    border-radius: 200px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    width: 400px;
-    margin: 20px auto;
-    text-align: justify;
-    padding: 30px;
-    border: 4px solid #000000;
-    
+#main-nav li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
 }
 
+#main-nav li a:hover {
+    color: #007bff;
+}
 
+/* Estilos para o rodapé */
 .page__footer {
-    width: 95%;
-    text-align: center; /* Centraliza o texto no rodapé */
-    padding: 20px;
-    background-color: #069bf5;
-    position: absolute;
-    bottom: 0;
-    border-radius: 200px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
 }
-nav ul {
-    list-style: none;
-    gap: 1rem;
+
+.page__footer p {
+    font-size: 14px;
+}
+
+.page__footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.page__footer a:hover {
+    text-decoration: underline;
 }
