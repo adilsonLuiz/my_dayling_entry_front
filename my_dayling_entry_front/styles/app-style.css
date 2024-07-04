@@ -73,24 +73,24 @@ body, html {
 }
 
 #btn-update, #btn-delete, #btn-save {
-    border: 2px solid black;
+    border: 1px solid black;
     color: rgb(3, 3, 3);
-    padding: 15px 32px;
+    padding: 8px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 24px;
-    margin: 4px 2px;
+    font-size: 21px;
+    margin: -4px 381px;
     cursor: pointer;
     border-radius: 40px;
 }
 
 #btn-update {
-    background-color: forestgreen;
+    background-color: rgb(64, 168, 64);
 }
 
 #btn-delete {
-    background-color: #e93035;
+    background-color: #ff0008;
 }
 
 #btn-save {
@@ -119,12 +119,12 @@ body, html {
 
 #table-entrys {
     border: 1px solid black;
-    width: 1200px;
-    padding: 5px;
+    width: 1142px;
+    padding: 0px;
     border-radius: 10px;
-    background-color: #ccc;
+    background-color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    height: 500px;
+    height: 290px;
 }
 
 td {
@@ -136,8 +136,13 @@ td {
 }
 
 th {
-    border: 1px solid black;
-    padding: 5px;
+    border: 0px solid black;
+    padding: 0px;
     border-radius: 10px;
     background-color: #069bf5;
+    position: sticky; /* Mantém o cabeçalho fixo no topo */
+    top: 0; /* Posiciona o cabeçalho no topo do contêiner de rolagem */
+    z-index: 1; /* Garante que o cabeçalho fique acima das outras linhas */
 }
+
+
