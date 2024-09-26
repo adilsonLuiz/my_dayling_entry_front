@@ -281,12 +281,15 @@ function getAboutInformations() {
             
             const timePage = document.getElementById('time-now');
             const apiVersion = document.getElementById('api-version');
+            const timeZoneInfo = document.getElementById('time-now');
 
 
 
             // sett informations
             timePage.innerHTML = `<b>DATE: <b>${dateNow}`;
             apiVersion.innerHTML = `<b>API VERSION: <b> ${data['api_version']}`;
+            timeZoneInfo.innerHTML = `<b>TIME ZONE INFO: <b> ${data['time_zone']}`;
+            
 
         })
         .catch((error) => { // Error
