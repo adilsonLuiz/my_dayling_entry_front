@@ -25,7 +25,7 @@ $ docker build -t my-dayling-front .
 Uma vez criada a imagem, para executar o container basta executar, **como administrador**, seguinte o comando:
 
 ```
-$ docker run -p 80:80 my-dayling-front
+$ docker run -p 8080:80 my-dayling-front
 ```
 
-Uma vez executando, para acessar a API, basta abrir o [http://localhost:80] no navegador.
+Uma vez executando, para acessar a API, basta abrir o [http://localhost:8080/pages/index.html] no navegador.
